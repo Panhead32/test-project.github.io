@@ -1,0 +1,484 @@
+@import 'reset'
+@import 'fonts'
+
+
+$font-stack: Rubik
+$primary-color: #fff
+$secondary-color: #6CEEC7
+$full-height: 100vh
+
+
+h1
+    font-family: $font-stack
+    color: $primary-color
+    font-size: 62px
+    line-height: 73px
+    font-weight: 500
+    text-align: center
+    width: 670px
+    margin-top: 40px
+    margin-bottom: 40px
+    
+.turquoise-text
+        color: $secondary-color
+
+.header-section,
+.sign-section
+    height: $full-height
+    position: relative
+    overflow: hidden
+
+.header-section
+    display: flex
+    justify-content: center
+    align-items: center
+
+.bg
+    position: fixed 
+    width: 100%
+    height: 100%
+    z-index: 0
+    background-size: cover  
+    background-image: url("/assets/img-bgs/bg-succes.png")
+    background-repeat: no-repeat
+
+.text-left
+    text-align: left
+
+.rg-text
+    margin-top: 25px
+    margin-bottom: 0px
+
+.email-text
+    margin-top: 20px
+    margin-bottom: 50px
+
+.content
+    padding-left: 185px
+    padding-top: 388px
+    color: #fff 
+    z-index: 10
+    position: absolute
+    font-family: Rubik
+    font-style: normal
+    
+.background-images
+    position: absolute
+    width: 100%
+    height: 100%
+    overflow: hidden
+    z-index: 1
+    top: 0
+.sign-section
+    display: flex
+    align-items: center
+.container
+    position: relative
+    z-index: 5
+
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-4,
+.figure-5,
+.figure-6,
+.figure-7,
+.figure-8,
+.figure-9
+    position: absolute
+
+.figure-1
+    top: -45px
+    right: 255px     
+
+.figure-2
+    top: 255px
+    left: -50px
+
+.figure-3
+    bottom: 45px
+    right: -40px
+.figure-4
+    bottom: 325px
+    left: -30px
+
+.figure-5
+    top: 135px
+    right: -65px
+
+.figure-6
+    bottom: -30px
+    right: 325px
+
+.figure-7
+    top: 364px
+    left: -35px
+
+.figure-8
+    bottom: -52px
+    right: -65px
+
+.figure-9
+    top: -82px
+    right: 299px
+
+.hello-content-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+
+.registration-button
+    width: 215px
+    height: 55px
+    border-radius: 5px
+    border: 2px solid $secondary-color
+    transition: 0.3s
+    a
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        font-size: 19px
+        line-height: 23px
+        font-weight: 500
+        color: $secondary-color
+        font-family: $font-stack
+        cursor: pointer
+        transition: 0.3s
+.registration-button:hover
+    background-color: $secondary-color
+    a
+        color: #000
+h2
+    font-family: $font-stack
+    color: $primary-color
+    font-size: 24px
+    line-height: 28px
+    text-align: center
+    font-weight: 500
+    margin-bottom: 55px
+
+
+input,
+.nice-select
+    width: 300px
+    height: 55px
+    background-color: rgba(0, 0, 0, 0.2)
+    border: 1px solid #fff
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3)
+    border-radius: 5px
+    color: #e0e0e0
+    font-family: $font-stack
+    font-size: 19px
+    line-height: 23px
+    font-weight: 300
+    padding-left: 50px
+    transition: 0.3s
+
+#code
+    pointer-events: none
+.active-phone
+    pointer-events: auto !important
+input:focus,
+input:hover
+    outline: none
+    background-color: rgba(0, 0, 0, 0.4)
+    border: 1px solid $secondary-color
+
+.input-label,
+.checkbox
+    position: relative
+    margin-bottom: 30px
+    width: 300px
+
+.input-icon
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 15px
+
+.sign-form,
+.sign-up-inputs
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.name-label,
+.my-select .current,
+.placeholder
+    position: absolute
+    pointer-events: none
+    left: 50px
+    top: 50%
+    transform: translateY(-50%)
+    font-family: $font-stack
+    font-size: 19px
+    line-height: 23px
+    font-weight: 300
+    color: #e0e0e0
+    overflow: hidden
+    transition: 0.3s
+    background-color: transparent
+.placeholder
+    opacity: 1   
+.first-name:not(:placeholder-shown)+.name-label,
+.second-name:not(:placeholder-shown)+.name-label,
+.phone-number:not(:placeholder-shown)+.name-label,
+.email-adress:not(:placeholder-shown)+.name-label,
+.password:not(:placeholder-shown)+.name-label,
+.confirm-password:not(:placeholder-shown)+.name-label,
+.first-name:focus+.name-label,
+.second-name:focus+.name-label,
+.phone-number:focus+.name-label,
+.email-adress:focus+.name-label,
+.password:focus+.name-label,
+.confirm-password:focus+.name-label
+    top: 11px
+    font-size: 11px
+    line-height: 13px
+    font-weight: 300
+    color: $secondary-color
+
+.checkbox-text,
+.log-in-text
+    font-family: $font-stack
+    font-weight: 300
+    font-size: 15px
+    line-height: 18px
+    color: #e0e0e0
+
+.terms-and-conditions:hover,
+.log-in-text a:hover
+    color: $secondary-color
+.my-select.is-value-selected ~ .placeholder
+    top: 11px
+    font-size: 11px
+    line-height: 13px
+    font-weight: 300
+    background-color: transparent
+    color: $secondary-color
+.my-select:focus ~ .placeholder
+    top: 11px
+    font-size: 11px
+    line-height: 13px
+    font-weight: 300
+    background-color: transparent
+    color: $secondary-color
+
+.custom-checkbox 
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+.custom-checkbox+label 
+    display: inline-flex
+    align-items: center
+    user-select: none
+
+.custom-checkbox+label::before 
+    content: ''
+    display: inline-block
+    width: 20px
+    height: 20px
+    flex-shrink: 0
+    flex-grow: 0
+    border: 1px solid $secondary-color
+    box-shadow: 0px 28px 25px -25px rgba(0, 0, 0, 0.25)
+    transition: 0.3s
+    border-radius: 3px
+    margin-right: 10px
+    cursor: pointer
+
+.error-checked
+    width: 20px
+    height: 20px
+    border: 1px solid #DA5050
+    background-color: #DA5050
+    border-radius: 3px
+    position: absolute
+    display: none
+
+.error-checked-fade
+    display: block
+
+.custom-checkbox:checked+label::before 
+    background-image: url(../assets/icons/check_icon.svg)
+    background-position: center
+    background-repeat: no-repeat
+    background-color: $secondary-color
+
+.nice-select
+    padding-top: 0
+
+.nice-select::after
+    width: 10px
+    height: 10px
+.nice-select.open .list
+    background: #FFF
+    border: 1px solid #FFF
+    box-sizing: border-box
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3)
+    border-radius: 5px
+    height: 160px
+.list::-webkit-scrollbar
+        display: none
+
+
+.nice-select .option
+    font-family: $font-stack
+    font-weight: 300
+    font-size: 15px
+    line-height: 18px
+    color: #5E5E5E
+    padding-top: 10px
+    &:hover,
+    &:focus,
+    &.selected.focus
+        padding-left: 30px
+        color: #212121
+        font-weight: 300
+
+.nice-select .option.selected.focus
+    
+.checkbox
+    display: flex
+    align-items: center
+
+
+.sign-up-button
+    width: 165px
+    height: 55px
+    border-radius: 5px
+    border: 1px solid $secondary-color
+    font-family: $font-stack
+    font-weight: 500
+    font-size: 19px
+    line-height: 23px
+    color: $secondary-color
+    display: flex
+    justify-content: center
+    align-items: center
+    outline: none
+    background: none
+    transition: 0.3s
+    &:hover
+        background-color: $secondary-color
+        color: #000
+
+
+.log-in-text
+    position: absolute
+    bottom: 25px
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 5
+
+.input-label:nth-child(1)
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 0.2s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+
+.input-label:nth-child(2)
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 0.4s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+
+
+.input-label:nth-child(3)
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 0.6s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+        z-index: 100
+
+
+.input-label:nth-child(4)
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 0.8s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+
+
+.input-label:nth-child(5)
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 1s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+
+
+.input-label:nth-child(6)
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 1.2s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+
+
+.input-label:nth-child(7)
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 1.4s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+.btn
+    padding: 0
+    margin: 0
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 1.8s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+
+.checkbox 
+    opacity: 0
+    transform: translateY(100px)
+    transition: 0.9s
+    transition-delay: 1.6s
+    &.new-animate
+        transform: translateY(0)
+        opacity: 1
+
+.my-select .list .option:first-child
+    height: 0
+    min-height: 0
+
+.validation-text
+    font-family: $font-stack
+    font-size: 10px
+    line-height: 12px
+    font-weight: 500
+    color: #DA5050
+    position: absolute
+    right: 0
+    bottom: -15px
+    display: none
+
+
+
+@import 'adapt'
